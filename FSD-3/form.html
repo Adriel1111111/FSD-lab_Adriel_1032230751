@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+    <script src="script.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+
+            /* Background image */
+            background-image: 
+                linear-gradient(
+                    rgba(219, 234, 254, 0.85),
+                    rgba(219, 234, 254, 0.85)
+                ),
+                url("MIT-WPU (1).jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            width: 320px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Registration Form</h2>
+
+        <form onsubmit="return validateForm()">
+            <label>Name:</label>
+            <input type="text" id="name"><br><br>
+
+            <label>Email:</label>
+            <input type="text" id="email"><br><br>
+
+            <label>Password:</label>
+            <input type="password" id="password"><br><br>
+
+            <label>Mobile Number:</label>
+            <input type="text" id="mobile"><br><br>
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+</body>
+</html>
